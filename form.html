@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .container{
+            background-color: #303030;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="/my-backend/profile" method="post">
+        <table width="100%">
+            <tr>
+                <td colspan="2" style="border: 1px solid black; background-color:#303030;">
+                    <h2>Tell Us about Yourself</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h4>Profile Information</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div><label for="fname">Last Name</label></div>
+                    <input name="firstName" type="text"  style="width: 90%;">
+                </td>
+                <td>
+                    <div><label for="fname">First Name</label></div>
+                    <input name="firstName" type="text"  style="width: 90%;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span>Gneder</span>
+                    <input name="gender" type="radio" value="male"/>Male
+                    <input name="gender" type="radio" value="female"/>Female
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Current Address</h4>
+                    <select name="city" id="">
+                        <option value="" disabled selected>Province/City</option>
+                        <option value="Phnom Penh">Phnom Penh</option>
+                        <option value="Kompot">Kompot</option>
+                        <option value="Phnom Penh">Phnom Penh</option>
+                        <option value="Kompong Cham">Kompong Cham</option>
+                        <option value="Kompong Thom">Kompong Thom</option>
+                    </select>
+                </td>
+                <td>
+                    <h4>Address</h4>
+                    <textarea name="address" cols="50" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h4>Skills</h4>
+                    <input name="skil" type="checkbox"/>Coding
+                    <input name="skil" type="checkbox"/>Marketing
+                    <input name="skil" type="checkbox"/>Designing
+                    <input name="skil" type="checkbox"/>Archetecture
+
+
+
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
